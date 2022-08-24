@@ -13,9 +13,8 @@ const searchBtn = document.getElementById('search-btn');
 const weatherDataBox = document.getElementById('weather-data-box');
 
 searchForm.addEventListener('submit', () => {
-  console.log('SUBMITTED!');
-  console.log(searchInput.value);
-  getData(searchInput.value, OPEN_WEATHER_KEY).then((resolve) => {
+  const formData = new FormData(searchForm);
+  getData(formData, OPEN_WEATHER_KEY).then((resolve) => {
     console.log(resolve);
   });
 });

@@ -1,9 +1,9 @@
 import getGeocodeData from './getGeocodeData';
 import getWeatherData from './getWeatherData';
 
-const getData = async (searchString, key) => {
-  const geocodeData = await getGeocodeData(searchString, key);
-  const weatherData = await getWeatherData(geocodeData, key);
+const getData = async (formData, key) => {
+  const geocodeData = await getGeocodeData(formData.get('search'), key);
+  const weatherData = await getWeatherData(geocodeData, formData.get('unit'), key);
   return weatherData;
 };
 

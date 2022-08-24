@@ -10,7 +10,11 @@
     <div id="content">
         <div id="search-box" class="box visible">
             <form onsubmit="return false">
-                <input type="search" name="search" id="search-input" placeholder="Search the weather around the world!">
+                <input type="search" name="search" id="search-input" placeholder="Search the weather around the world!" required>
+                <input type="radio" name="unit" id="celsius" value="metric" required>
+                <label for="celsius">Celsius</label>
+                <input type="radio" name="unit" id="fahrenheit" value="imperial" required>
+                <label for="fahrenheit">Fahrenheit</label>
                 <button id="search-btn">Search</button>
             </form>
         </div>
