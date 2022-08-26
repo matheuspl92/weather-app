@@ -1,6 +1,9 @@
 const transitionLoadingToData = () => {
   const loadBox = document.getElementById('load-box');
-  loadBox.innerHTML = '';
+  loadBox.classList.add('hidden');
+
+  const dataBox = document.getElementById('data-box');
+  dataBox.classList.remove('hidden');
 };
 
 export default transitionLoadingToData;

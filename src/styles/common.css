@@ -3,7 +3,8 @@
     opacity: 100%;
 }
 
-.invisible {
+.invisible,
+.hidden {
     visibility: hidden;
     opacity: 0%;
 }
@@ -16,7 +17,7 @@
 }
 
 .box {
-    
+    position: absolute;
 }
 
 #content-box {

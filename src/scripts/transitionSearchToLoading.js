@@ -4,6 +4,7 @@ const transitionSearchToLoading = () => {
 
   const loadBox = document.getElementById('load-box');
   loadBox.innerHTML = 'Loading...';
+  loadBox.classList.remove('hidden');
 };
 
 export default transitionSearchToLoading;

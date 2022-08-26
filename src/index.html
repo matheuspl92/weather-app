@@ -10,8 +10,8 @@
 
 <body>
     <div id="content">
-        <div id="content-box" class="box visible">
-            <div id="search-box">
+        <div id="content-box">
+            <div id="search-box" class="box">
                 <form onsubmit="return false">
                     <input type="search" name="search" id="search-input"
                         placeholder="Search the weather around the world!" required>
@@ -22,7 +22,7 @@
                     <button id="search-btn">Search</button>
                 </form>
             </div>
-            <div id="data-box">
+            <div id="data-box" class="box hidden">
                 <div id="localization-data" class="data-content">
                     <h3 id="name"></h3>
                     <p id="country"></p>
@@ -36,8 +36,9 @@
                     <p id="weather-main"></p>
                     <p id="weather-description"></p>
                 </div>
+                <button id="return-btn">Return</button>
             </div>
-            <div id="load-box"></div>
+            <div id="load-box" class="box hidden"></div>
         </div>
     </div>
 </body>
