@@ -9,16 +9,21 @@
 </head>
 
 <body>
+    <div id="header">
+        <h1>GoodWeather</h1>
+    </div>
     <div id="content">
         <div id="content-box">
-            <div id="search-box" class="box">
+            <div id="search-box" class="box visible">
                 <form onsubmit="return false">
                     <input type="search" name="search" id="search-input"
                         placeholder="Search the weather around the world!" required>
-                    <input type="radio" name="unit" id="celsius" value="metric" required>
-                    <label for="celsius">Celsius</label>
-                    <input type="radio" name="unit" id="fahrenheit" value="imperial" required>
-                    <label for="fahrenheit">Fahrenheit</label>
+                    <div id="radio-group">
+                        <input type="radio" name="unit" id="celsius" value="metric" required>
+                        <label for="celsius">Celsius</label>
+                        <input type="radio" name="unit" id="fahrenheit" value="imperial" required>
+                        <label for="fahrenheit">Fahrenheit</label>
+                    </div>
                     <button id="search-btn">Search</button>
                 </form>
             </div>
@@ -33,13 +38,19 @@
                     <p id="temp-max"></p>
                     <p id="temp-min"></p>
                     <p id="humidity"></p>
-                    <p id="weather-main"></p>
-                    <p id="weather-description"></p>
+                    <div id="weather-group">
+                        <img id="weather-img" src="###" alt="weather icon">
+                        <p id="weather-main"></p>
+                        <p id="weather-description"></p>
+                    </div>
                 </div>
                 <button id="return-btn">Return</button>
             </div>
             <div id="load-box" class="box hidden"></div>
         </div>
+    </div>
+    <div id="footer">
+        <p>Made by <a href="https://github.com/matheuspl92/weather-app" target="_blank">matheuspl92</a>. Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>.</p>
     </div>
 </body>
 

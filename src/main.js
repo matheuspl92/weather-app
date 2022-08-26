@@ -1,5 +1,8 @@
 import './styles/reset.css';
 import './styles/common.css';
+import './styles/search_box.css';
+import './styles/loading_box.css';
+import './styles/data_box.css';
 import search from './scripts/search';
 import transitionDataToSearch from './scripts/transitionDataToSearch';
 

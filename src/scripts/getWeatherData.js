@@ -5,7 +5,7 @@ const getWeatherData = async (geoData, unit, key) => {
     const weatherData = await weatherDataResponse.json();
     return weatherData;
   } catch (error) {
-    console.log('getWeatherData ERROR!');
+    alert(error);
   }
 };
 

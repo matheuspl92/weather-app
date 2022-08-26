@@ -1,10 +1,10 @@
 const transitionSearchToLoading = () => {
   const searchBox = document.getElementById('search-box');
-  searchBox.classList.add('hidden');
+  searchBox.classList.replace('visible', 'hidden');
 
   const loadBox = document.getElementById('load-box');
   loadBox.innerHTML = 'Loading...';
-  loadBox.classList.remove('hidden');
+  loadBox.classList.replace('hidden', 'visible');
 };
 
 export default transitionSearchToLoading;
