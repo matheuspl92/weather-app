@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoodWeather</title>
 </head>
+
 <body>
     <div id="content">
         <div id="content-box" class="box visible">
-            <form onsubmit="return false">
-                <input type="search" name="search" id="search-input" placeholder="Search the weather around the world!" required>
-                <input type="radio" name="unit" id="celsius" value="metric" required>
-                <label for="celsius">Celsius</label>
-                <input type="radio" name="unit" id="fahrenheit" value="imperial" required>
-                <label for="fahrenheit">Fahrenheit</label>
-                <button id="search-btn">Search</button>
-            </form>
+            <div id="search-box">
+                <form onsubmit="return false">
+                    <input type="search" name="search" id="search-input"
+                        placeholder="Search the weather around the world!" required>
+                    <input type="radio" name="unit" id="celsius" value="metric" required>
+                    <label for="celsius">Celsius</label>
+                    <input type="radio" name="unit" id="fahrenheit" value="imperial" required>
+                    <label for="fahrenheit">Fahrenheit</label>
+                    <button id="search-btn">Search</button>
+                </form>
+            </div>
+            <div id="data-box">
+                <div id="localization-data" class="data-content">
+                    <h3 id="name"></h3>
+                    <p id="country"></p>
+                    <p id="coordinates"></p>
+                </div>
+                <div id="weather-data" class="data-content">
+                    <h3 id="temp-now"></h3>
+                    <p id="temp-max"></p>
+                    <p id="temp-min"></p>
+                    <p id="humidity"></p>
+                    <p id="weather-main"></p>
+                    <p id="weather-description"></p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
