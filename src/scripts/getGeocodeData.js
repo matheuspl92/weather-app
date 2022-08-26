@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const getGeocodeData = async (searchString, key) => {
   try {
     const geocodeResponse = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchString}&limit=1&appid=${key}`, { mode: 'cors' });

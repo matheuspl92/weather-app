@@ -1,7 +1,6 @@
 import './styles/reset.css';
 import './styles/common.css';
-import getData from './scripts/getData.js';
-import updateDataBox from './scripts/updateDataBox';
+import search from './scripts/search';
 
 // API KEYS
 const OPEN_WEATHER_KEY = '6cae0cb3d6b3ff316c8db6713f40ca12';
@@ -13,8 +12,5 @@ const searchBtn = document.getElementById('search-btn');
 
 searchForm.addEventListener('submit', () => {
   const formData = new FormData(searchForm);
-  getData(formData, OPEN_WEATHER_KEY).then((resolve) => {
-    console.log(resolve);
-    updateDataBox(resolve, formData);
-  });
+  search(formData, OPEN_WEATHER_KEY);
 });
